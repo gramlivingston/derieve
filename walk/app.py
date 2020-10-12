@@ -47,7 +47,7 @@ def index():
 @app.route('/gallery')
 
 #define app function
-def index():
+def gallery():
 
     #move through list
     search = gallery
