@@ -77,7 +77,7 @@ def index():
 @app.route('/UIC')
 
 #define app function
-def index():
+def UIC():
 
     #move through list
     search = UIC
@@ -107,7 +107,7 @@ def index():
 @app.route('/chicago')
 
 #define app function
-def index():
+def chicago():
 
     #move through list
     search = chicago
@@ -138,7 +138,7 @@ def index():
 @app.route('/usa')
 
 #define app function
-def index():
+def usa():
 
     #move through list
     search = usa
