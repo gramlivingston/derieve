@@ -9,12 +9,19 @@ import requests
 import re
 
 
-
-#set route for user navigation
 @app.route('/')
 
-#define app function
 def index():
+    return render_template("index.html")
+
+
+
+
+#set route for user navigation
+@app.route('/fffkslasdj')
+
+#define app function
+def index2():
     #Set up list
     gallery = "gallery&400"
     UIC = 'UIC'
