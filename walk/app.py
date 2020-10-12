@@ -82,7 +82,7 @@ def UIC():
     text = (soup.text)
 
     
-    return render_template("index.html", text = text)
+    return render_template("uic.html", text = text)
 
 
 
@@ -122,7 +122,7 @@ def chicago():
     text = (soup.text)
 
     
-    return render_template("index.html", text = text)
+    return render_template("chicago.html", text = text)
 
 
 
@@ -163,4 +163,4 @@ def usa():
     text = (soup.text)
 
     
-    return render_template("index.html", text = text)
+    return render_template("usa.html", text = text)
