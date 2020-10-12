@@ -15,7 +15,7 @@ import re
 
 #define app function
 def index():
-     #Set up list
+    #Set up list
     gallery = "gallery&400"
     UIC = 'UIC'
     chicago = 'chicago'
