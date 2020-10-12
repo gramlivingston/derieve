@@ -9,13 +9,7 @@ import requests
 import re
 
 
-
-#set route for user navigation
-@app.route('/')
-
-#define app function
-def index():
-    #Set up list
+ #Set up list
     gallery = "gallery&400"
     UIC = 'UIC'
     chicago = 'chicago'
@@ -24,6 +18,11 @@ def index():
 
     #get number
     number = 40
+#set route for user navigation
+@app.route('/')
+
+#define app function
+def index():
     
     #move through list
     search = UIC
@@ -45,7 +44,7 @@ def index():
     return render_template("index.html", text = text)
 
 #set route for user navigation
-@app.route('/')
+@app.route('/gallery')
 
 #define app function
 def index():
