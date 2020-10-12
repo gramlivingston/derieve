@@ -9,20 +9,21 @@ import requests
 import re
 
 
- #Set up list
-gallery = "gallery&400"
-UIC = 'UIC'
-chicago = 'chicago'
-usa = 'usa'
 
-
-    #get number
-number = 40
 #set route for user navigation
 @app.route('/')
 
 #define app function
 def index():
+     #Set up list
+    gallery = "gallery&400"
+    UIC = 'UIC'
+    chicago = 'chicago'
+    usa = 'usa'
+
+
+    #get number
+    number = 40
     
     #move through list
     search = UIC
