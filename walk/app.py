@@ -85,7 +85,7 @@ def gallery():
 
 
 #set route for user navigation
-@app.route('/UIC')
+@app.route('/uic')
 
 #define app function
 def UIC():
