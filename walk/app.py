@@ -50,6 +50,16 @@ def index():
 #define app function
 def gallery():
 
+         #Set up list
+    gallery = "gallery&400"
+    UIC = 'UIC'
+    chicago = 'chicago'
+    usa = 'usa'
+
+
+    #get number
+    number = 40
+
     #move through list
     search = gallery
     article = []
@@ -79,6 +89,18 @@ def gallery():
 
 #define app function
 def UIC():
+
+
+         #Set up list
+    gallery = "gallery&400"
+    UIC = 'UIC'
+    chicago = 'chicago'
+    usa = 'usa'
+
+
+    #get number
+    number = 40
+
 
     #move through list
     search = UIC
@@ -110,6 +132,16 @@ def UIC():
 #define app function
 def chicago():
 
+         #Set up list
+    gallery = "gallery&400"
+    UIC = 'UIC'
+    chicago = 'chicago'
+    usa = 'usa'
+
+
+    #get number
+    number = 40
+
     #move through list
     search = chicago
     article = []
@@ -140,6 +172,16 @@ def chicago():
 
 #define app function
 def usa():
+
+         #Set up list
+    gallery = "gallery&400"
+    UIC = 'UIC'
+    chicago = 'chicago'
+    usa = 'usa'
+
+
+    #get number
+    number = 40
 
     #move through list
     search = usa
