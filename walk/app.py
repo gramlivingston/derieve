@@ -10,14 +10,14 @@ import re
 
 
  #Set up list
-    gallery = "gallery&400"
-    UIC = 'UIC'
-    chicago = 'chicago'
-    usa = 'usa'
+gallery = "gallery&400"
+UIC = 'UIC'
+chicago = 'chicago'
+usa = 'usa'
 
 
     #get number
-    number = 40
+number = 40
 #set route for user navigation
 @app.route('/')
 
