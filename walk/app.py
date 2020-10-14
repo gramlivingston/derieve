@@ -22,7 +22,7 @@ def index():
 
 
     #get number
-    number = 40
+    number = 20
     
     #move through list
     search = gallery
@@ -61,7 +61,7 @@ def UIC():
 
 
     #get number
-    number = 40
+    number = 20
 
 
     #move through list
@@ -102,7 +102,7 @@ def chicago():
 
 
     #get number
-    number = 40
+    number = 20
 
     #move through list
     search = chicago
@@ -143,7 +143,7 @@ def usa():
 
 
     #get number
-    number = 40
+    number = 20
 
     #move through list
     search = usa
