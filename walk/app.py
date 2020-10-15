@@ -23,7 +23,7 @@ def index():
 
 
     #get number
-    number = 20
+    number = 30
 
 
 
@@ -42,7 +42,7 @@ def index():
 
     page = requests.get(f'{article[number]}')
     soup = BeautifulSoup(page.text, 'html.parser')
-    text = (soup.text)
+    text = (soup.p)
 
     
     return render_template("index.html", text = text)
@@ -65,7 +65,7 @@ def UIC():
 
 
     #get number
-    number = 20
+    number = 30
 
 
     #move through list
@@ -82,7 +82,7 @@ def UIC():
 
     page = requests.get(f'{article[number]}')
     soup = BeautifulSoup(page.text, 'html.parser')
-    text = (soup.text)
+    text = (soup.p)
 
     
     return render_template("uic.html", text = text)
@@ -106,7 +106,7 @@ def chicago():
 
 
     #get number
-    number = 20
+    number = 30
 
     #move through list
     search = chicago
@@ -122,7 +122,7 @@ def chicago():
 
     page = requests.get(f'{article[number]}')
     soup = BeautifulSoup(page.text, 'html.parser')
-    text = (soup.text)
+    text = (soup.p)
 
     
     return render_template("chicago.html", text = text)
@@ -147,7 +147,7 @@ def usa():
 
 
     #get number
-    number = 20
+    number = 30
 
     #move through list
     search = usa
@@ -163,7 +163,7 @@ def usa():
 
     page = requests.get(f'{article[number]}')
     soup = BeautifulSoup(page.text, 'html.parser')
-    text = (soup.text)
+    text = (soup.p)
 
     
     return render_template("usa.html", text = text)
