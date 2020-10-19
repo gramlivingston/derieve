@@ -1,5 +1,5 @@
-html,body {
-  background-image: url({{picture}});
+body {
+  background-image: url("{{picture}}");
   }
 
 p{
