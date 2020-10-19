@@ -14,6 +14,23 @@ import re
 
 #define app function
 def index():
+    
+    headers = {'user-agent': 'Mozilla/5.0'}
+    page = requests.get("https://www.reddit.com/r/MemeEconomy/", headers=headers)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    imgs = soup.findAll("img")
+
+    imglist = []
+    for img in imgs :
+        link_src = img.get('src')
+        imglist.append(link_src)
+
+    picture = imglist[7]
+    
+    
+    
+    
+    ########################################
     #Set up list
     gallery = "gallery&400"
     UIC = 'UIC'
@@ -45,7 +62,7 @@ def index():
     text = (soup.p)
 
     
-    return render_template("index.html", text = text)
+    return render_template("index.html", text = text, picture = picture)
 
 
 
