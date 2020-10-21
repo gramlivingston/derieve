@@ -44,8 +44,9 @@ def index():
     page = requests.get(f'{article[number]}')
     soup = BeautifulSoup(page.text, 'html.parser')
     text = soup.find('p').getText()
-    print(text)
+    
 
+    return render_template("index.html", text = text)
 
 
 
