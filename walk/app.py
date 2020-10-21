@@ -43,8 +43,11 @@ def index():
 
     page = requests.get(f'{article[number]}')
     soup = BeautifulSoup(page.text, 'html.parser')
-    text = soup.find('p').getText()
-    
+    try:
+        print(soup.find('p'))
+        text = soup.find('p').getText()
+    except:
+        text = "no p"
 
     return render_template("index.html", text = text)
 
