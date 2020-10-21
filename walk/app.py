@@ -24,7 +24,7 @@ def index():
 
 
     #get number
-    number = 15
+    number = 40
 
 
 
@@ -33,7 +33,7 @@ def index():
     search = UIC
     article = []
     results = 100 # valid options 10, 20, 30, 40, 50, and 100
-    page = requests.get(f"https://www.google.com/search?q={search}&num={results}")
+    page = requests.get(f"https://www.google.com/search?q={search}&num={results}&pws=0")
     soup = BeautifulSoup(page.content, "html.parser")
     links = soup.findAll("a")
     for link in links :
