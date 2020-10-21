@@ -30,7 +30,7 @@ def index():
 
 
     #move through list
-    search = UIC
+    search = gallery
     article = []
     results = 100 # valid options 10, 20, 30, 40, 50, and 100
     page = requests.get(f"https://www.google.com/search?q={search}&num={results}&pws=0")
@@ -43,10 +43,8 @@ def index():
 
     page = requests.get(f'{article[number]}')
     soup = BeautifulSoup(page.text, 'html.parser')
-    text = (soup.p)
-
-    
-    return render_template("index.html", text = text)
+    text = soup.find('p').getText()
+    print(text)
 
 
 
