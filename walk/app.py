@@ -50,8 +50,8 @@ def index():
             text = soup.find('p').getText()
 
             return render_template("index.html", text = text)
-        time.sleep(0.1)
-        i = i + 1
+            time.sleep(0.1)
+            i = i + 1
     return render_template("index.html", text = text)
 
 
