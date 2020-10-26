@@ -8,38 +8,11 @@
     <title>Walk</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   
-    <!-- <script type="text/javascript"
-     src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->  
-   <!-- <script type="text/javascript">
-    var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-    </script> -->  
-
-
-   <!-- <script type="text/javascript">
-        var intervalID = setInterval(update_values,100000);
-        
-          function update_values() {
-                $.getJSON($SCRIPT_ROOT + '/_stuff',
-                       
-              function(data) {
-                $('#result').text(data.result);
-                console.log(data)
-              });
-              
-            };
-           
-            
-            
-            function stopTextColor() {
-              clearInterval(intervalID);
-            }
-            
-        </script> -->
 
 
 </head>
 
-<!-- <body onload="update_values();"> -->
+<body> 
     <form action="uic">
         <button type="submit">uic</button>
     <form>
