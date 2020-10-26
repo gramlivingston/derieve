@@ -28,7 +28,7 @@ def index():
     #set headers
     headers = {'User-Agent': 'Mozilla/5.0'}
     #get number
-    number = 30
+    number = 40
 
 
 
@@ -36,7 +36,7 @@ def index():
         #move through list
     search = UIC
     article = []
-    results = 50 # valid options 10, 20, 30, 40, 50, and 100
+    results = 100 # valid options 10, 20, 30, 40, 50, and 100
     page = requests.get(f"https://www.google.com/search?q={search}&num={results}&pws=0",headers = headers)
     soup = BeautifulSoup(page.content, "html.parser")
     links = soup.findAll("a")
